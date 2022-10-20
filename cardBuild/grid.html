@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <title>cardflex</title>
+</head>
+
+<style>
+    body{
+        background-color: #333;
+    }
+
+    section {
+        padding-top: 10em;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .grid-templater {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-gap: 2rem;
+    }
+
+    .grid-templater div {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .first-item {
+        background-color: cornflowerblue;
+        grid-column: 1/3;
+
+    }
+
+    .sec-item {
+        background-color: red;
+    }
+
+    .third-item {
+        background-color: yellow;
+        grid-row: 2 / 4;
+    }
+
+    .fourth-item {
+        background-color: orange;
+        grid-column: 2 / 4;
+        
+    }
+
+    .fifth-item {
+        background-color: orange;
+        grid-column: 2 / 4;
+        
+    }
+
+    @media screen and (min-width: 800Px){
+        .grid-templater {
+            margin-top: 30%;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+</style>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+
+            <div class="grid-templater">
+                <div class="first-item"></div>
+                <div class="sec-item"></div>
+                <div class="third-item"></div>
+                <div class="fourth-item"></div>
+                <div class="fifth-item"></div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
